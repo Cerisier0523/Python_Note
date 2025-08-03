@@ -1,0 +1,49 @@
+a="AbC dEf Gh"
+#类调用
+#1.str.lower 返回字符串的副本，全部字符小写
+b=str.lower(a)
+print(b)
+
+#2.str.upper 返回字符串的副本，全部字符大写
+b=str.upper(a)
+print(b)
+
+#3.str.title 返回字符串的副本，全部单词首字母大写，其余小写
+b=str.title(a)
+print(b)
+
+#4.str.capitalize 返回字符串的副本，全部字符首字母大写，其余小写
+b=str.capitalize(a)
+print(b)
+
+#5.str.strip 返回字符串的副本，去掉首尾字符
+b=str.strip(a)
+print(b)
+
+#6.str.lstrip(chars) 返回字符串的副本，去掉首字符
+b=str.lstrip(a)
+print(b)
+
+#7.str.rstrip(chars) 返回字符串的副本，去掉尾字符
+b=str.rstrip(a)
+print(b)
+
+#8.str.split(sep=None) 返回一个列表，由str根据sep被分割的部分组成列表
+b=str.split(a,",")
+print(b)
+
+#9.str.count(sub)返回子串sub在str中出现的次数
+b=str.count(a,"a")
+print(b)
+
+#10.str.replace(old,new) 返回字符串的副本，所有old子串被替换为new
+b=str.replace(a,"AbC","abcd")
+print(b)
+
+#11.str.join(iter) 在iter变量除了最后元素外每个元素后增加一个str
+b=str.join(a,"123456")
+print(b)
+
+#12.str.center(width,[,fillchar])字符串str根据宽度width居中，fillchar可选
+b=str.center(a,20,"=")
+print(b)
